@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ </head>
+ <style>
+ #Welcome3{
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+     padding: 10px;
+     font-family: 'Poppins', sans-serif;
+    }
+ .essay{
+    width:100%;
+    height:150px;
+    border:2px solid brown;
+    background-color: rgba(250, 128, 114, 0.618);
+    color:black;
+    text-align: justify;
+    padding:10px 0px 10px;
+ }
+
+.img{
+    
+    transition-timing-function: ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.uniage{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.uniage1 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height:100%;
+    }
+.uniage1:hover img{
+    transform: scale(1.1);
+}
+
+.img{
+
+    transition-timing-function: ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+
+
+
+.uniage2 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height:100%;
+    }
+.uniage2:hover img{
+    transform: scale(1.1);
+}
+
+.uniage3 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height:100%;
+    }
+.uniage3:hover img{
+    transform: scale(1.1);
+}
+
+.button{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.buttone{
+    width:300px;
+    height: 50px;
+    border:2px solid brown;
+    background-color: blue;
+    color:aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+.buttone:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.content{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+
+}
+
+.content16{
+    width:300px;
+    height:300px;
+    background-color: rgba(139, 0, 139, 0.475);
+    border:2px solid brown;
+    text-align: justify;
+     margin-top: 10px;
+     padding: 20px;
+ }
+
+.content17{
+    width:300px;
+    height:310px;
+    background-color: rgba(85, 107, 47, 0.542);
+    border: 2px solid brown;
+    margin-top: 10px;
+    text-align: justify;
+    text-indent: 0cap;
+    padding: 20px;
+ }
+.content18{
+    width:300px;
+    height:300px;
+    background-color:rgba(148, 0, 211, 0.462);
+    border:2px solid brown;
+    text-align: justify;
+     margin-top: 10px;
+     padding: 20px;
+ }
+
+.essay1{
+    width:100%;
+    height:160px;
+    border:2px solid brown;
+    background-color:rgba(126, 252, 0, 0.474);
+    color:black;
+    text-align: justify;
+    padding:10px 0px 10px;
+     }
+
+.content19{
+    width:300px;
+    height:300px;
+    background-color: rgba(139, 0, 139, 0.49);
+    border:2px solid brown;
+    text-align: justify;
+     margin-top: 10px;
+     padding: 20px;
+ }
+
+.content20{
+    width:300px;
+    height:300px;
+    background-color: rgba(255, 140, 0, 0.401);
+    border:2px solid brown;
+    text-align: justify;
+     margin-top: 10px;
+     padding: 20px;
+     }
+.content21{
+    width:300px;
+    height:300px;
+    background-color: rgba(148, 0, 211, 0.429);
+    border:2px solid brown;
+    text-align: justify;
+     margin-top: 10px;
+     padding: 20px;
+}
+
+.hai{
+    color: blue;
+}
+.hai:hover{
+    color:blue;
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration-line: none;
+    color: aliceblue;
+
+    
+}
+a:hover{
+    color: red;
+    cursor: pointer;
+
+}
+
+.footer{
+    background-color: rgb(61, 58, 65);
+    height: 300px;
+    padding-top: 30px;
+    color: white;
+}
+.container{
+    display: flex;
+}
+.social-icons i{
+    color:rgb(125, 216, 82);
+    font-size:larger;
+}
+.list{
+    margin-left: 300px;
+}
+.social-icons{
+    margin-left: 445px;
+}
+/* 🌐 For Tablets (1024px and below) */
+@media screen and (max-width: 1024px) {
+    #Welcome3 {
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    .essay, .essay1 {
+        height: auto;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .hello{
+        color: blue;
+        
+    }
+
+    .hello:hover{
+        color:blue;
+        text-decoration: underline;
+    }
+
+    .uniage {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+
+    
+    .buttone {
+        width: 250px;
+        height: 45px;
+    }
+
+    .content {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 15px;
+    }
+
+    .content16, .content17, .content18, .content19, .content20, .content21 {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+}
+
+/* 📱 For Mobile Devices (600px and below) */
+@media screen and (max-width: 600px) {
+    #Welcome3 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .essay, .essay1 {
+        height: auto;
+        font-size: 14px;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .uniage {
+        grid-template-columns: repeat(1, 1fr); /* 1 column */
+        gap: 10px;
+    }
+
+    
+    .buttone {
+        width: 200px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .content {
+        grid-template-columns: repeat(1, 1fr); /* 1 column */
+    }
+
+    .content16, .content17, .content18, .content19, .content20, .content21 {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+</style>
+
+<body style="background-color: #f4f4f4;;">
+<h1 id="Welcome3">UNIVERSAL TOUR✈️</h1>
+<a href="./packages.html" class="hai">Back to Home Page</a>
+<p class="essay">Europe is one of the world's most fascinating continents, known for its rich history, diverse cultures, and significant global influence. It is home to some of the world’s oldest civilizations, breathtaking landscapes, and innovations that have shaped modern society.Europe boasts some of the most breathtaking natural landscapes. From the snow-capped Alps to the sunny beaches of the Mediterranean, the continent offers a wide range of environments. The rivers, such as the Danube and the Rhine, have played a crucial role in shaping European history and trade. National parks and nature reserves preserve the stunning beauty of European wildlife, attracting millions of tourists every year.Europe is a continent of immense historical depth, cultural richness, and geographical beauty. It continues to be a leader in global affairs, influencing politics, economics, and the arts. Whether one is drawn to its ancient ruins, vibrant cities, or stunning landscapes, Europe remains a place of endless exploration and fascination.Europe is one of the most visited continents in the world, attracting millions of tourists every year. With its rich history, diverse cultures, breathtaking landscapes, and world-class attractions, Europe offers something for every traveler. From ancient ruins to modern cities, scenic countryside to pristine beaches, the continent is a dream destination for those seeking adventure, relaxation, and cultural experiences.swissalps,santorini greece,paris,plitvice lakes.Europe remains a top destination for travelers due to its unique combination of history, culture, nature, and modern attractions.</p>
+<div class="uniage">
+<div class="uniage1">
+<img src="https://images.hdqwalls.com/wallpapers/eiffel-tower-france-city-at-night-5k-yn.jpg" width="300px" height="300px" class="img">
+</div>
+<div class="uniage2">
+<img src="https://images.creativemarket.com/0.1.0/ps/6825533/1820/1213/m1/fpnw/wm1/szleybkmubqbqfqvxr0aoxfl8hti9xftbisxbbsyfxjq0quhqn6cfronsmlyiabp-.jpg?1565909328&s=9d2edaaabdbbce20585fcf99efcec806" width="300px" height="300px" class="img">
+</div>
+<div class="uniage3">
+<img src="https://wallpaperaccess.com/full/3823558.jpg" width="300px" height="300px" class="img">
+</div>
+</div>
+<div class="button">
+<button class="buttone"><a href="./Table.html">1.PARIS</a></button>
+<button class="buttone"><a href="./Table.html">2.SWISSALPS GREENARY HILLS</a></button>
+<button class="buttone"><a href="./Table.html">3.PLITVICE LAKE PARK</a></button>
+</div>
+<div class="content">
+ <div class="content16">
+<p>Paris is a city that captivates the hearts of all who visit. With its remarkable history, stunning architecture, artistic legacy, and unparalleled cuisine, it remains one of the most extraordinary places in the world. Whether exploring its historic sites, indulging in its culinary delights, or simply strolling through its charming streets, Paris offers an unforgettable experience for all.French cuisine is celebrated worldwide, and Paris offers some of the finest culinary experiences. From charming cafés to Michelin-starred restaurants, the city is a paradise for food lovers. </p>
+ </div>
+ <div class="content17">
+<p>The Swiss Alps are famous for their snow-capped peaks, crystal-clear lakes, and lush green valleys. Iconic mountains such as the Matterhorn, Jungfrau, and Eiger offer some of the most spectacular views in Europe.Tourism in the Swiss Alps is not limited to sightseeing; it is a paradise for adventure lovers. In winter, skiing and snowboarding are the most popular activities, with world-class resorts like St. Moritz, Verbier, and Zermatt offering excellent slopes. During summer, visitors can enjoy hiking, mountain biking, and paragliding, exploring breathtaking trails such as the Eiger Trail and the Glacier Express route.</p>
+ </div>
+ <div class="content18">
+<p>Plitvice Lakes National Park, located in central Croatia, is one of the most breathtaking natural wonders in Europe. Known for its cascading lakes, lush forests, and diverse wildlife, this UNESCO World Heritage Site attracts over a million visitors each year.The park is home to a rich variety of plant and animal species. Over 1,400 plant species thrive in the park, along with rare orchids and ancient beech forests. Wildlife enthusiasts may spot deer, wolves,wildbears even the elusive Eurasian brown bear.The lakes are teeming with fish, while birds such as eagles, owls, and kingfishers add to the park's vibrant ecosystem.</p>
+ </div>   
+</div>
+<p class="essay1">Japan, an island nation in East Asia, is one of the most fascinating travel destinations in the world. Known for its unique blend of ancient traditions and cutting-edge technology, Japan attracts millions of tourists every year. From historical temples and beautiful cherry blossoms to futuristic cities and delicious cuisine, Japan offers an unforgettable experience for every traveler.While Japan embraces its traditions, it is also a global leader in technology and modern innovation. The country’s cities are filled with skyscrapers, advanced transportation, and futuristic attractions.Cultural and historical attractions include Kyoto's temple shrine,Himeji castle.Modern cities and technological travels include Tokyo,osaka,odaiba.Natural beauty and seasonal attractions include Cherry blossom season,Mount Fuji,Hokkaido's snow festivals.Cultural experiences include onsen(hot springs),tea cermony,Sumo wrestling and martial status.Japan is a country that seamlessly blends the past and the future, offering a travel experience like no other. With its rich cultural heritage, advanced cities, breathtaking natural beauty, and world-class cuisine, Japan is a must-visit destination for travelers of all interests. Whether exploring ancient temples, admiring cherry blossoms, or experiencing cutting-edge technology, Japan promises unforgettable memories.apan is known for its efficient and punctual transportation system, making it easy for tourists to explore the country. The Shinkansen (bullet train) allows visitors to travel between cities quickly,apan is known for its efficient and punctual transportation system, making it easy for tourists to explore the country. The Shinkansen (bullet train) allows visitors to travel between cities quickly,apan is known for its efficient and punctual transportation system, making it easy for tourists to explore the country. The Shinkansen (bullet train) allows visitors to travel between cities quickly,apan Rail Passes for tourists, providing unlimited train travel at a discounted price.</p>
+<div class="uniage">
+<div class="uniage1">
+<img src="https://wallpaperaccess.com/full/19067.jpg" width="300px" height="300px" class="img">
+</div>
+<div class="uniage2">
+<img src="https://a.cdn-hotels.com/gdcs/production1/d1520/d15bcc97-8a7b-4f23-b37d-abe7bb267e45.jpg" width="300px" height="300px" class="img">
+</div>
+<div class="uniage3">
+<img src="https://mynihonblog.files.wordpress.com/2019/02/img_20190212_122900_5159026891818862578505.jpg?w=1024" width="300px" height="300px" class="img">
+</div>
+</div>
+<div class="button">
+<button class="buttone"><a href="./Table.html">4.TOKYO</a></button>
+<button class="buttone"><a href="./Table.html">5.OSAKA</a></button>
+<button class="buttone"><a href="./Table.html">6.MOUNT FUJI</a></button>
+</div>
+<div class="content">
+<div class="content19">
+<p>Tokyo is  busiest pedestrian crossing in the world.Tallest tower in the world with an observation deck offering stunning city views.A beautiful park with cherry blossoms in spring and vibrant foliage in autumn.Akihabra is the center of electronics, anime, and gaming culture.A magical bamboo grove with picturesque pathways.okyo offers endless opportunities for exploration. Visit the iconic Tokyo Tower to the top of the Tokyo Skytree for breathtaking city views. Don’t miss the vibrant Shibuya district, known for its neon lights, shopping, and nightlife.Tokyo stroll through the serene Meiji Shrine  explore the traditional architecture of Asakusa. </p>
+</div>
+<div class="content20">
+<p>Osaka is historical cattle surrounded by a beautiful park with cherry blossoms.Its also famous for entertainment district famous for its neon lights, street food, and the Glicoextensive waterfront,adorned with modern developments likeTempozan Harbor Village and the Osaka Aquarium, reflects transformed its natural geography into significant spaces.Osaka, the third largest city in Japan presents captivating landscape that harmoniously blends urban development with natural beauty. Situated at the mouth of the Yodo River on Osaka Bay includes city's geography has played pivotal role in its historical&economic development.</p>
+</div>
+<div class="content21">
+<p>Mount Fuji, known to locals as Fujisan, is the highest mountain and the most recognizable mountain in Japan. It is one of the country’s world-class destinations that’s very popular among local and foreign travelers. Even if you are not an advanced hiker, Mount Fuji offers one of the most empowering adventures you can experience with just basic hiking preparations.Mount Fuji official climbing season in Mount Fuji is from July to September, which tends to be warmest and driest months in Japan. During this period, the mountain trails and facilities are open to accept hikers, the mountain is usually free of snow,access to public transportation is easy. </p>    
+</div>    
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <h3 style="margin-left: 50px;">Contact</h3>
+            <p style="color: rgb(137, 205, 92);margin-left: 50px;">Email: wonpath@gmail.in</p>
+            <p style="color: rgb(146, 206, 87);margin-left: 50px;">Phone: +121 865846 265396</p>
+            <p style="color: rgb(142, 213, 95);margin-left: 50px;">Address: 123 street</p>
+        </div>
+        <div class="footer-content">
+            <h3 style="text-align:center; margin-left: 300px;">Quick Links</h3>
+             <ul class="list">
+                <li ><a href="" style="color: rgb(143, 199, 91);">Home</a></li>
+                <li><a href="" style="color: rgb(134, 203, 86);">About</a></li>
+                <li ><a href="" style="color: rgb(138, 200, 85);">Contact</a></li>
+             </ul>
+        </div>
+        <div class="footer-content">
+            <h3 style="text-align: end;margin-left: 350px;">Follow Us</h3>
+            <ul class="social-icons">
+             <li style="margin-right: 30px; "><a href=""><i class="fab fa-facebook" style="transform: scale(1.6);"></i></a></li>
+             <li><a href=""><i class="fab fa-twitter" style="transform: scale(1.6);margin-top: 20px;"></i></a></li>
+             <li style="margin-right: 10px;margin-top: 20px; "><a href=""><i class="fab fa-instagram" style="transform: scale(1.6);"></i></a></li>
+             
+            </ul>
+            </div>
+    </div>
+    <div class="bottom-bar">
+        <p style="margin-top: 5px; text-align: center;font-size: larger;">&copy; 2023 your company . All rights reserved</p>
+    </div>
+    
+</div>
+</head>
+<body>
+</html>

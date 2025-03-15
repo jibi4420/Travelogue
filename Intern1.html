@@ -1,0 +1,640 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ </head>
+ <style>
+  #Welcome2{
+    height:50px;
+    width:100%;
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+    border:2px solid brown;
+    font-weight: 500;
+    padding: 20px;
+    font-family:'Poppins', sans-serif;
+    
+    }
+
+    .img{
+        transition-timing-function: ease;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        
+    
+    }
+
+
+    .im{
+        border:2px solid red;
+        border-radius: 50%;
+        margin-left: auto;
+    }
+
+    #logo{
+        height: 70px;
+        background-color:#333;
+        color: aliceblue;
+        border:2px solid brown;
+        text-align: center;
+        padding:25px;
+        font-family:'Poppins', sans-serif;
+
+    }
+    
+
+    .imu{
+        margin-top:10px;
+    }
+
+    
+.essay{
+    width:100%;
+    height:150px;
+    border:2px solid rgba(165, 42, 42, 0.432);
+    background-color:rgba(100, 0, 42, 0.512);
+    color:aliceblue;
+    text-align: justify;
+    padding: 10px,10px;
+    
+    }
+
+ .interage{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ }
+.img{
+    transition-timing-function: ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.interage1 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+}
+.interage1:hover img{
+    transform: scale(1.1);
+}
+.interage2 img{
+    object-fit: cover;
+    transition:transform 0.8s;
+    height:100%;
+}
+.interage2:hover img{
+    transform: scale(1.1);
+}
+.interage3 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height:100%;
+}
+.interage3:hover img{
+    transform: scale(1.1);
+}
+
+.button{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.buttone{
+    width:300px;
+    height:50px;
+    border:2px solid brown;
+    background-color: blue;
+    color:aliceblue;
+    font-family:'Poppins', sans-serif;
+ 
+}
+.buttone:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.content{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.content4{
+    width:300px;
+    height:300px;
+    background-color:rgba(139, 0, 139, 0.414);
+    border:2px solid brown;
+    margin-top: 10px;
+    padding:20px;
+    text-align: justify;
+}
+
+.content5{
+    width:300px;
+    height:300px;
+    background-color:rgba(85, 107, 47, 0.552);
+    border:2px solid brown;
+    margin-top: 10px;
+    padding: 20px;
+    text-indent: 0cap;
+    text-align: justify;
+
+}
+
+.content6{
+    width:300px;
+    height:300px;
+    background-color:rgba(148, 0, 211, 0.51);
+    border:2px solid brown;
+    margin-top: 10px;
+    padding: 20px;
+    text-indent: 0cap;
+    text-align: justify;
+    
+}
+.essay2{
+    width:100%;
+    height: 150px;
+    background-color:rgba(126, 252, 0, 0.599);
+    color:darkblue;
+    border:2px solid brown;
+    text-align: justify;
+    padding: 10px;
+    
+}
+
+.interage{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.interage4 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+}
+.interage4:hover img{
+    transform: scale(1.1);
+}
+.interage5 img{
+    object-fit: cover;
+    transition:transform 0.8s;
+    height:100%;
+}
+.interage5:hover img{
+    transform: scale(1.1);
+}
+.interage6 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height:100%;
+}
+.interage6:hover img{
+    transform: scale(1.1);
+}
+
+.Dontent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.content7{
+    width:300px;
+    height:300px;
+    background-color:rgba(139, 0, 139, 0.547);
+    border:2px solid darkred;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.content8{
+    width:300px;
+    height:300px;
+    background-color:rgba(255, 140, 0, 0.444);
+    border:2px solid darkred;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: justify;
+
+}
+
+.content9{
+    width:300px;
+    height:300px;
+    background-color:rgba(148, 0, 211, 0.482);
+    border:2px solid darkred;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.essay3{
+    width:100%;
+    height:150px;
+    border:2px solid brown;
+    background-color:rgba(240, 128, 128, 0.334);
+    color:black;
+    text-align: justify;
+    padding: 10px,10px;
+}
+.interage7 img{
+    object-fit: cover;
+    transition:transform 0.8s;
+    height: 100%;
+}
+.interage7:hover img{
+    transform: scale(1.1);
+}
+.interage8 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+}
+
+.interage8:hover img{
+    transform: scale(1.1);
+}
+
+.interage9 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+}
+
+.interage9:hover img{
+    transform: scale(1.1);
+}
+
+.eontent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+
+.content10{
+    width:300px;
+    height:300px;
+    background-color:rgba(139, 0, 139, 0.555);
+    border:2px solid rgba(139, 0, 0, 0.396);
+    margin-top: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+.content11{
+    width:300px;
+    height:300px;
+    background-color:rgba(85, 107, 47, 0.538);
+    border:2px solid rgba(139, 0, 0, 0.385);
+    margin-top: 10px;
+    text-align: justify;
+    padding: 20px;
+    }
+
+.content12{
+    width:300px;
+    height:300px;
+    background-color:rgba(148, 0, 211, 0.507);
+    border:2px solid darkred;
+    margin-top: 10px;
+    text-align: justify;
+    padding: 20px;
+    
+}
+
+#COMBO{
+    background-color:rgba(218, 165, 32, 0.507);
+    color:azure;
+    text-align: center;
+    border:2px solid brown;
+    height: 30px;
+    
+}
+
+.essay4{
+    background-color: rgba(126, 252, 0, 0.497);
+    color:darkblue;
+    padding: 20px;
+    text-align: justify;
+    
+    
+}
+
+.fontent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.content13{
+    width:300px;
+    height:300px;
+    background-color: rgba(139, 0, 139, 0.567);
+    border:2px solid brown;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 20px;
+}
+.content14{
+    width:300px;
+    height:300px;
+    background-color:rgba(255, 140, 0, 0.508);
+    border:2px solid brown;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.content15{
+    width:300px;
+    height:300px;
+    background-color:rgba(148, 0, 211, 0.644);
+    border:2px solid brown;
+    text-align: justify;
+    padding: 20px;
+    margin-top: 10px;
+
+}
+
+.interage10 img{
+    object-fit: cover;
+    transition:transform 0.8s;
+    height:100%;
+}
+
+.interage10:hover img{
+    transform: scale(1.1);
+}
+.interage11 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height:100%;
+}
+.interage11 img:hover{
+    transform: scale(1.1);
+}
+.interage12 img{
+    object-fit: cover;
+    transition:transform 0.8s;
+    height:100%;
+}
+.interage12:hover img{
+    transform:scale(1.1);
+}
+
+a{
+    text-decoration-line: none;
+    color:aliceblue;
+}
+a:hover{
+    color: red;
+    cursor:pointer;
+}
+
+.hello{
+    color: blue;
+    
+}
+
+.hello:hover{
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+.footer{
+    background-color: rgb(61, 58, 65);
+    height: 300px;
+    padding-top: 30px;
+    color: white;
+}
+.container{
+    display: flex;
+}
+.social-icons i{
+    color:rgb(125, 216, 82);
+    font-size:larger;
+}
+.list{
+    margin-left: 300px;
+}
+.social-icons{
+    margin-left: 445px;
+}
+
+@media screen and (max-width: 1024px) {
+    .interage, .content, .Dontent, .eontent, .fontent {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .buttone {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .interage, .content, .Dontent, .eontent, .fontent {
+        grid-template-columns: 1fr;
+    }
+
+    .buttone {
+        width: 100%;
+        height: 40px;
+    }
+
+    #logo, #Welcome2 {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .essay, .essay2, .essay3, .essay4 {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 16px;
+    }
+
+    .buttone {
+        font-size: 14px;
+    }
+
+    .content4, .content5, .content6, 
+    .content7, .content8, .content9, 
+    .content10, .content11, .content12, 
+    .content13, .content14, .content15 {
+        width: 100%;
+        height: auto;
+    }
+} 
+</style>
+<body style="background-color: #f4f4f4;">
+<h1 id="logo"><img src="./logos.png" class="imu">PACKAGES OF WONDERPATH</h1>
+<h1 id="Welcome2">INTERNATIONAL TOUR(Enjoy National Charm)<img src="./international tour.jpg" width="70px" height="50px" class="im"> </h1>
+<a href="./packages.html" class="hello">Back to Homepage</a>
+<p class="essay">Darjeeling is a mesmerizing hill station in West Bengal, India. Known for its tea industry, the town is nestled among rolling mountains.Darjeeling offers breathtaking views of the mighty Kanchenjunga. The sunrise at Tiger Hill is a spectacular sight.Darjeeling’s tea gardens are world-famous. The tea produced here has a unique flavor that is loved globally.The town is home to a diverse mix of people, including Gorkhas, Bhutias, and Lepchas, who add to its cultural richness.Darjeeling, a city in the Indian state of West Bengal, is a globally recognized destination, renowned for its tea industry and the magnificent view of the Kanchenjunga, the world’s third-highest mountain.he picturesque landscape of Darjeeling is an amalgamation of rolling hills dotted with vibrant green tea plantations and a backdrop of snow-covered peaks. The region’s unique geographical features have contributed to its distinct biodiversity, making it a haven for nature lovers and wildlife enthusiasts.Darjeeling is a melting pot of diverse cultures, with people from Nepali, Bhutia, and Lepcha communities cohabiting harmoniously. This cultural diversity is reflected in the region’s food, music, festivals, and language, providing a rich tapestry of experiences for visitors.Darjeeling’s allure lies in its serene landscapes, world-renowned tea, and rich cultural diversity. It serves as a perfect example of how nature and human enterprise can coexist, creating a unique blend of natural beauty and cultural richness. This quaint hill station continues to captivate the hearts of those who visit, leaving an indelible impression of its charm and tranquility.</p>
+<!-- Step1 -->
+<div class="interage">
+<div class="interage1">
+<img src="https://www.trawell.in/admin/images/upload/646902927Darjeeling_Happy_Valley_Tea_Estate_Main.jpg" width="300px" height="300px" class="img">
+</div>
+<div class="interage2">
+<img src="https://data.agatetravel.com/images/photogallery/2019/tiger-hill.jpg" width="300px" height="300px" class="img">
+</div>
+<div class="interage3">
+<img src="https://flyingsquirrelholidays.com/wp-content/uploads/2023/05/1669592096_new-project-2022-11-28t050439-546.jpg" width="300px" height="300px" class="img">
+</div>
+</div>
+<div class="button">
+<button class="buttone"><a href="./Table.html">1.HAPPYVALLEY ESTATE</button></a>
+<button class="buttone"><a href="./Table.html">2.TIGER HILLS</button></a>
+<button class="buttone"><a href="./Table.html">3.MAHANANDA WILDLIFE SANCTUARY</button></a>
+</div>
+<!-- STEP2 -->
+ <div class="content">
+<div class="content4">
+<p class>The Happy Valley Tea-Estate is open to visitors from Tuesday to Saturday. Visitors can visit the garden from 8 AM to 4 PM.The tours take you through process of tea cultivation, tea tasting, and industrial processes. The entry fee is INR 100 for adults and free for children below the age of 12.The tea estate follows eco-friendly practices for cultivation of their uniquely flavoured teas. Here are types of tea you can purchase and enjoy in the garden Located 1km from Happy Valley Tea Estate,Padmaja Zoological Park is a dedicated centre of conservation.Spread over 68 acres aims
+over 68 acres aims species like snow leopards,red,pandas,Himalayan wolves.</p>    
+</div>
+<div class="content5">
+<p>Tiger Hill is one of the most famous tourist destinations in and around Darjeeling and is, therefore, a must-visit. It is now a nature reserve that is maintained by the GTA (Gorkha Territorial Administration).Tiger Hill is located some distance away from the main town, you have to wake up early in the morning and drive up the hill.There are different tickets at this tower depending on the tower level. The ground level will cost you Rs 20/- per person, the first-floor will is Rs. 30/- and the top floor is Rs. 40/- per person.The sun rises in all its glory, this is a photographers delight and will definitely be a defining moment of your trip.</p>
+</div>
+<div class="content6">
+<p>Mahananda Wildlife Sanctuary is home to a diverse range of wildlife due to its varying altitudes. The forest spans from 500 feet at Sukna to over 4300 feet at Latpanchar.The Sanctuary’s natural habitat is ideal for many wild animals, including the Royal Bengal Tiger, Indian Bison, spotted deer, elephant, barking deer, Sambar, Himalayan Black bear, leopard, and more.If you prefer to travel by train, you can reach NJP Railway Station, which is the nearest station. From there, you can hire a car to reach the Sanctuary, which is only 14 km away and takes approximately 40 minutes.The nearest airport to the Sanctuary is Bagdogra.</p>
+</div>
+</div>
+<!-- STEP3 -->
+ <P class="essay2">Kerala is known as God's Own country and also a popular tourist destination in India reowned for his lush,greenary,backwaters,beaches and cultural heritage.Famous hill station Munnar make feels that very relaxable and also offers a cool and refreshing retreat from the heat of the plains.One of the main attractions of kerala is its backwaters,a network of interconnected canals,rivers,lakes and inlets strech along the cost.Tourists can take a leisurelyboat ride through the backwaters,enjoy the peaceful surroundings and getting a glimpse of rural life in kerala.Houseboat cruices aer the popular way to experience the backwaters,with luxurious accomodations and deleicious kerala cuisine serveed on boat hotel.Kerala is also home to several wildlife sanctuaries and national park,where tourist can spot a variety of exotic animals and birds.n addition to its natural beauty and cultural attractions, Kerala is also famous for its Ayurvedic treatments and wellness retreats. The state is home to numerous Ayurvedic resorts and spas, where visitors can rejuvenate their mind, body, and soul through traditional therapies and massages.Overall, tourism in Kerala offers a unique and unforgettable experience for visitors, with its diverse attractions, warm hospitality, and stunning landscapes. Whether you’re looking for a relaxing beach vacation, a wildlife adventure, or a cultural immersion, Kerala has something for everyone. It’s no wonder that this enchanting state has become a top destination for travelers seeking a slice of paradise in India. The state government has made significant investments in infrastructure and promotion to attract more tourists to Kerala and boost the economy.</P>
+<div class="interage">
+ <div class="interage4">
+ <img src="https://www.munnar.holiday/munnartourism/wp-content/uploads/2016/08/Munnar-tourist-guide.jpg"  width="300px" height="300px" class="img">
+ </div>
+<div class="interage5">
+<img src="https://www.tourmyindia.com/states/kerala/images/pathiramanal3.jpg"  width="300px" height="300px" class="img">    
+</div>
+ <div class="interage6">
+<img src="https://www.nativeplanet.com/img/2023/06/idukki-waterfalls-kerala-1200-1687620453.jpg"  width="300px" height="300px" class="img">
+ </div>
+</div>
+<div class="button">
+<button class="buttone"><a href="./Table.html">4.MUNNAR</button></a> 
+<button class="buttone"><a href="./Table.html">5.PATHIRAMANAL ISLAND</button></a>
+<button class="buttone"><a href="./Table.html">6.ADIMALI WATERFALLS</button> </a>   
+</div>
+<div class="Dontent">
+<div class="content7">
+<p> Munnar part of Western Ghats, Munnar unfolds like a canvas painted with hues of lush greenery, mist-kissed hills,pristine landscapes. This charming hill station, situated in the southern Indian state of Kerala, has etched its place on map as sanctuary for nature enthusiasts.When journey to Munnar, the anticipation of encountering the picturesque tea plantations, cascading waterfalls, and the tranquil ambiance held the promise of an unforgettable adventure.lush green tea bushes, meticulously manicured, offer a sensory symphony, with the scent of fresh tea leaves wafting cool mountain air.</p>
+</div>
+<div class="content8">
+<p>Pathiramanal Island, located in the Alappuzha district of Kerala, is a haven for birdwatchers and nature enthusiasts. Spanning 10 acres in the serene Vembanad Lake, this green island is a sanctuary for hundreds of rare migratory birds from around the world, as well as a diverse range of flora and fauna. The name "Pathiramanal" translates to "Sands of Night," adding to the mystical allure of this beautiful spot.The island is home to around 90 species of birds, 30 species of butterflies, 160 species of plants, 55 species of fish, and 20 species of spiders.In recent years, the Government of Kerala has initiated the Pathiramanal Biodiversity Conservation for eco-tourism.</p>
+</div>
+<div class="content9">
+<p>Adimali Waterfalls is a fantastic sight for Munnar visitors. From Adimali town, the waterfall—which rises at the summit of Korangatti hill. It diverges through the rocks of
+ waterfall has water for eight months of the year, even if the flow slows during the sweltering summer. Adimali Falls also provides an incredible sight.Adimali though only around 40 kilometers away from our destination, Eravikulam, air of a hill station especially in monsoon.It is a chain of waterfalls set amidst lush green forest, Waterfalls and its surrounding area are a treasure trove of natural wonders and vibrant culture.</p>
+</div>
+</div>
+<p class="essay3">Bangalore , also known as the Silicon Valley of the south, is a perfect example of peaceful coexistence. Recent years have seen Bengaluru develop and grow exponentially, while staying true to its roots. Despite its gradual metamorphosis into a concrete jungle filled with corporates and high-end pubs, Bengaluru remains a tourist hub with several million tourists flocking to see the various sights in and around the city every year.• Experience the beauty of red roses at Lalbagh The Bangalore Palace,exquisite architecture at Tipu Sultan's Summer Palace,Bannerghatta National Park.Bangalore’s weather is known for its year-round comfort. January and February are cool and pleasant. March to May sees a gradual rise in temperatures, though it remains manageable. The monsoon from June to September brings consistent rainfall, rejuvenating the city’s greenery. October to December offers cooler conditions, ideal for outdoor exploration and cultural activities.A tour to this city does promise many enchanting moments full of complete fun and entertainment with right Bangalore Tour Packages. From forts to best of entertainment parks to beautiful lakes to liveliest pubs, you will have varied options to keep yourself engaged. However, to have a memorable holiday, along with all these, you also need suitable accommodation and access to all the facilities.Through our Bangalore travel packages we take care of almost everything related to your travel. For instance, have a look at some of the common facilities offered with most of our packages. We cover an extensive range of resorts and hotels and include transportation modes airway, railways and roadways.</p>
+<div class="interage">
+ <div class="interage7">
+<img src="https://www.transindiatravels.com/wp-content/uploads/lalbagh-botanical-garden-bangalore.jpg" width="300px" height="300px" class="img">
+</div>
+ <div class="interage8">
+<img src="https://live.staticflickr.com/65535/33845563728_57631e60a3_z.jpg" width="300px" height="300px" class="img">
+</div>
+ <div class="interage9">
+ <img src="https://www.eazynazy.com/wp-content/uploads/2018/03/IMG_0880-1024x683.jpg" width="300px" height="300px" class="img">
+</div>   
+</div>
+<div class="button">
+<button class="buttone"><a href="./Table.html">7.LAL BOTANICAL GARDEN</button></a>
+<button class="buttone"><a href="./Table.html">8.BANGALORE SUMMER PALACE</button></a>
+<button class="buttone"><a href="./Table.html">9.BANNERGHATTA BIOLOGICAL GARDEN</button></a>    
+</div>
+<div class="eontent">
+<div class="content10">
+<p>Bangalore is famous for city of gardens.Among these gardens,lal botanical garden called or regarded as crowning jewel of Bangalore.Lalbagh was established in 1760 by Haider Ali, ruler of Mysore.Its main purpose was to serve entry point for new and useful species of flowers,fruits and vegetables helpful for horticulture and effective cultivation.Botanical garden provides silent and pleasant environment make-day with positivity and relaxing mindset.The garden surrounds one of the towers erected by  founder of Bangalore,Gowda. The park has some rare species of plants brought from Persia, Afghanistan and France.</p>
+</div>
+<div class="content11">
+<p>Bangalore metropolitan city with 14 million population, the city is known for its IT hub.Apart from that, it’s famous for its fashion, incredible food, filter kaapi, and not-so-controversial Sāmbhar and its breakfast. But the other main charm of Bangalore is its traditional heritage architecture, which stands out as super strong to this day. One of the most beautiful and strong among them is Tipu Sultan’s Summer Palace.It is named after Tipu Sultan, the “Tiger of Mysore” for his fierce resistance against British colonial forces. The term “Summer Palace” indicates its primary function as a place for relaxation and respite during the summer months.</p>
+</div>
+<div class="content12">
+<p>Bannerghatta Biological Park, also known as the Bannerghatta Zoo, is zoological garden located in the city of Bengaluru. It was initially a small zoo and picnic corner within Bannerghatta National Park (BNP) which was started in 1974.The Bannerghatta Biological Park is located within the limits of Anekal Revenue Taluk in Urban District. The park is situated almost midway between city center of Bengaluru and Anekal town, at about 25 km from Vidhana Soudha and at about 20 km to North West of Anekal town.Most prominent and interesting ones are Thamin deer, Hog deer, King Cobra, Crocodiles, Himalayan black bear, panthers and various birds.</p>
+</div>    
+</div>
+<h2 id="COMBO">COMBO PACKAGES</h2>
+<p class="essay4">Combo package is a collection of various places with affordable cost.Its helpful for the middle class people to enjoy the tourism in the affordable prices.Places added in the combo are familiar places where always crowded because of its beautyness,heritage and also this places have some historical connections to.Packages includes Goa,Mysore and famous Amritsar golden temple.Every arrangement available in the package of Rs:20000 for each.Package contains with food and accomodation first Amritsar temple,Goa beach and Mysore.Its a 10days to 12 days trip.Combo package makes your trip enjoyable,excellent and Memorable times with your family.</p>
+<div class="interage">
+<div class="interage10">
+<img src="https://www.baltana.com/files/wallpapers-10/View%20Golden%20Temple%20Amritsar%20Wallpaper.jpg" width="300px" height="300px" class="img">   
+</div>
+<div class="interage11">
+<img src="https://www.coxandkings.co.uk/-/media/cox-and-kings/images/page-header-images/destinations/indian-subcontinent/india/western-india/india-goa-western-india-shutterstock772145203.jpg?la=en&hash=607E14EE04F2459361560164C4F2394CAF1C0178" width="300px" height="300px" class="img">    
+</div>
+<div class="interage12">
+<img src="https://images.freeimages.com/images/large-previews/3d3/mysore-palace-tipu-sultan-palace-palace-of-south-indian-india-palace-1143948.jpg" width="300px" height="300px" class="img">    
+</div>    
+</div>
+<div class="button">
+    <button class="buttone"><a href="./Table.html">10.AMRITSAR GOLDEN TEMPLE</button></a>
+    <button class="buttone"><a href="./Table.html">11.GOA BEACH</button></a>
+    <button class="buttone"><a href="./Table.html">12.MYSORE PALACE</button></a>   
+</div>
+<div class="fontent">
+<div class="content13">
+<p>Amritsar Temple is also known as Harmandir located in Amritsar, Punjab, India.It provides a brief history of golden temple,including its construction by Guru Arjan Dev in 16th century explore the architectural beauty of the golden temple with its intricate marble work,glided decorations,and reflective pool surrounding the main shrine.Visitors visited share their experience describes the sights,sense of peace and tranquility  felt upon entering the premises.Inside the temple langer hall freshly cooked foods available.One of most striking features of Golden Temples its golden dome, which is covered in over 750 kilograms of pure gold.</p>
+</div>
+<div class="content14">
+<p>Goa is the smallest state in India. It is stated that Vasco da Gama discovered Goa in 1543 and gave a world over recognization. People of Goa speak in the Konkani language. Goa is known for world-famous beaches. Goa has all over fifty beaches. Goa has the most contributions to India Tourism. Goa has always been the first tourism spot to enjoy life. Goa is known for beaches, but Goa has covered one-third of forests. Goa is the only place where motorcycles are used for paid lifts. Portugal ruled in Goa for 450 years.Home to beautiful beaches and lush greenery, Goa’s natural beauty attracts tourists from around the world.
+</div>
+<div class="content15">
+<p>Mysore, also known as Mysuru, is a famous city in the Indian state of Karnataka. It’s well-known for its rich history, culture, and beautiful architecture.Mysore was the capital of the Kingdom of Mysore, ruled by the Wodeyar dynasty. The city’s history is deeply linked with the royal heritage and grandeur.Mysore is home to many attractions. The Mysore Palace, a magnificent structure, is the most famous. The city also hosts the famous Mysore Dasara festival.he city is also famous for Mysore silk sarees, a hand-woven fabric known for its quality and traditional motifs.
+</div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <h3 style="margin-left: 50px;">Contact</h3>
+            <p style="color: rgb(137, 205, 92); margin-left: 50px;">Email: wonpath@gmail.in</p>
+            <p style="color: rgb(146, 206, 87);margin-left: 50px;">Phone: +121 865846 265396</p>
+            <p style="color: rgb(142, 213, 95);margin-left: 50px;">Address: 123 street</p>
+        </div>
+        <div class="footer-content">
+            <h3 style="text-align:center; margin-left: 300px;">Quick Links</h3>
+             <ul class="list">
+                <li ><a href="" style="color: rgb(143, 199, 91);">Home</a></li>
+                <li><a href="" style="color: rgb(134, 203, 86);">About</a></li>
+                <li ><a href="" style="color: rgb(138, 200, 85);">Contact</a></li>
+             </ul>
+        </div>
+        <div class="footer-content">
+            <h3 style="text-align: end;margin-left: 350px;">Follow Us</h3>
+            <ul class="social-icons">
+             <li style="margin-right: 30px; "><a href=""><i class="fab fa-facebook" style="transform: scale(1.6);"></i></a></li>
+             <li><a href=""><i class="fab fa-twitter" style="transform: scale(1.6);margin-top: 20px;"></i></a></li>
+             <li style="margin-right: 10px;margin-top: 20px; "><a href=""><i class="fab fa-instagram" style="transform: scale(1.6);"></i></a></li>
+             
+            </ul>
+            </div>
+    </div>
+    <div class="bottom-bar">
+        <p style="margin-top: 5px; text-align: center;font-size: larger;">&copy; 2023 your company . All rights reserved</p>
+    </div>
+    
+</div>
+</body>
+</html>
+

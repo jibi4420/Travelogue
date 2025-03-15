@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        #Welcome4{
+    width:100%;
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    padding: 10px;
+    font-size:xx-large;
+}
+
+
+#logo{
+    height: 70px;
+    background-color: black;
+    color: aliceblue;
+    border:2px solid brown;
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    padding:25px;
+}
+
+
+.imu{
+    margin-top:10px;
+    width:90px;
+    height:30px;
+    border:2px solid red;
+    border-radius:50%;
+}
+
+.im{
+    border:2px solid red;
+    border-radius: 50%;
+}
+
+.essay{
+    width:100%;
+    height:70px;
+    border:2px solid brown;
+    background-color: rgba(255, 160, 122, 0.797);
+    color:rgba(0, 100, 0, 0.495);
+    text-align: justify;
+    padding:10px 0px 10px;
+    text-align: justify;
+}
+
+.img{
+    transition-timing-function: ease;
+    margin-top: 5px;
+}
+
+.fam{
+    color: blue;
+}
+
+.fam{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.famiage{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.famiage1 img{
+    object-fit: cover;
+    transition:transform 0.8s;
+    height: 100%;
+   
+}
+
+.famiage1:hover img{
+    transform: scale(1.1);
+}
+
+.famiage2 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height:100%;
+}
+
+.famiage2:hover img{
+    transform: scale(1.1);
+}
+
+.famiage3 img{
+    object-fit: cover;
+    transition:transform 0.8s;
+    height: 100%;
+}
+
+.famiage3:hover img{
+    transform: scale(1.1);
+}
+
+.button{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.buttone{
+    width:300px;
+    height:50px;
+    border:2px solid brown;
+    background-color: blue;
+    color: aliceblue;
+    margin-top:10px;
+    font-family:'Poppins', sans-serif;
+    }
+
+.buttone:hover{
+    color: red;
+    cursor:pointer;
+}
+
+.famiage4 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height:100%;
+}
+
+.famiage4:hover img{
+    transform: scale(1.1);
+}
+
+.famiage5 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height:100%;
+}
+
+.famiage5:hover img{
+    transform: scale(1.1);
+}
+
+.famiage6 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height:100%;
+}
+
+.famiage6:hover img{
+    transform: scale(1.1);
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.content22{
+    width:300px;
+    height:300px;
+    border:2px solid brown;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(139, 0, 139, 0.503);
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.content23{
+    width:300px;
+    height:300px;
+    border:2px solid brown;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(85, 107, 47, 0.481);
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    padding: 20px;
+
+}
+.content24{
+    width:300px;
+    height:300px;
+    border:2px solid brown;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(148, 0, 211, 0.522);
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.essay1{
+    
+        width:100%;
+        height:100px;
+        border:2px solid brown;
+        background-color:rgba(126, 252, 0, 0.655);
+        text-align: justify;
+        padding:10px 0px 10px;
+        font-family: 'Times New Roman', Times, serif;
+}
+
+.img{
+    
+    transition-timing-function:ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+
+
+}
+
+.content25{
+    width:300px;
+    height:300px;
+    border:2px solid brown;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(139, 0, 139, 0.525);
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.content26{
+    width:300px;
+    height:300px;
+    border:2px solid brown;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(255, 140, 0, 0.527);
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.content27{
+
+    width:300px;
+    height:300px;
+    border:2px solid brown;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgba(148, 0, 211, 0.499);
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    padding: 20px;
+}
+    
+a{
+    text-decoration-line: none;
+    color: aliceblue;
+}
+
+a:hover{
+    color: red;
+    cursor:pointer;
+}
+
+.footer{
+    background-color: rgb(61, 58, 65);
+    height: 300px;
+    padding-top: 30px;
+    color: white;
+}
+.container{
+    display: flex;
+}
+.social-icons i{
+    color:rgb(125, 216, 82);
+    font-size:larger;
+}
+.list{
+    margin-left: 300px;
+}
+.social-icons{
+    margin-left: 445px;
+}
+
+@media screen and (max-width: 1024px) {
+    .famiage, .button, .content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .buttone {
+        width: 100%;
+    }
+}
+</style>
+    <body style="background-color:#f4f4f4;">
+<h1 id="logo"><img src="./deslog.jpg" class="imu">PACKAGES OF WONDERPATH</h1>
+<h1 id="Welcome4">FAMILY TOUR <img src="./logof.webp" width="70px" height="70px" class="im"></h1>
+<a href="./packages.html" class="fam">Back to Homepage.</a>
+<p class="essay">Family tour package is specially introduced for couples and family with childrens to enjoy your day with your favorite members.In this package famous tourists spots specially vibes of hills available for family based tourism includes hill stations,live house boat journeys with food and accomodations.Major places are Elagiri hills,Pallathuruthy boat house,Ooty.All the mentioned spots are feel good nature of greenary and blossoms by the plants.Greenery is considered to have a good effect on the eyesight.
+    Greenery absorbs the polluted air and so enjoyed by everyone for the freshness and purity.Green trees are known to attract the clouds, and hence they play a role in ground water resource management as well as helps in bringing rainfall following places are rock of this features.   </p>
+ <div class="famiage">
+ <div class="famiage1">
+ <img src="https://pmlholidays.com/admin/production/images/packages/Manimuthar_Falls_yelagiri.jpg" width="300px" height="300px" class="img">   
+ </div> 
+ <div class="famiage2">
+<img src="https://dynamic.tourtravelworld.com/package-images/photo-big/dir_15/432746/150164.jpg" width="300px" height="300px" class="img">  
+ </div>  
+ <div class="famiage3">
+<img src="https://wallpapercave.com/wp/wp5392704.jpg" width="300px" height="300px" class="img">
+</div>
+ </div>
+ <div class="button">
+<button class="buttone"><a href="./Table.html">1.ELAGIRI HILLS</a></button>
+<button class="buttone"><a href="./Table.html">2.PALLATHURUTHY BOAT HOUSE</a></button>
+<button class="buttone"><a href="./Table.html">3.OOTY</a></button>
+ </div>   
+ <div class="content">
+<div class="content22">
+<p>Yelagiri is surrounded by lush forests and beautiful orchards, making it a perfect destination for nature lovers. The hill station comprises 14 small villages and is spread across an area of about 30 square kilometers. The climate in Yelagiri remains pleasant throughout the year, with summers being mild and winters being cool. The monsoon season brings moderate rainfall, adding to the scenic beauty of the place.Yelagiri offers several attractions that cater to different types of travelers. Some of the must-visit places include punganoor lake,swamimalai hills,nature park,jalagamparai waterfalls and velavan temple.</p>
+</div>
+<div class="content23">
+<p>Pallathuruthy Boat House is a beautiful and serene destination located in the Alappuzha district kerala Known for its backwaters and traditional houseboats,place offers an unforgettable experience to visitors seeking peace,natural beauty place also perfect getaway for nature lovers, honeymooners and families looking to unwind amidst Kerala’s tranquil waterways.Pallathuruthy is a small village near Alleppey,often referred to  the "Venice of the East" due to its extensive network of canals, lakes,lagoons. The region is famous for its houseboat tourism, where visitors can stay in luxurious floating homes and experience  charm of backwaters.</p>
+</div>
+<div class="content24">
+<p>Ooty, officially known as Udhagamandalam, is a popular hill station located in the Nilgiri Hills of Tamil Nadu, India. Known for its cool climate, picturesque landscapes, and colonial charm, Ooty is often referred to as the "Queen of Hill Stations.It is a favorite destination for nature lovers, honeymooners, and adventure enthusiasts.Major attractions includes ooty lake,Botanical garden,Dottabeta peak,Nilgiri mountain railway.Its famous beautyness are beautiful artificial lake where visitors can enjoy boating and admire the scenic surroundings.One of the main attractions of Ooty is its pleasant climate throughout the year Summers are cool.winter are chilly.</p>
+</div>
+</div>
+<p class="essay1">Maldives is a stunning island nation located in the Indian Ocean, southwest of Sri Lanka and India. Known for its crystal-clear waters, white sandy beaches, and luxurious resorts, the Maldives is a dream destination for travelers seeking relaxation and natural beauty.Maldives consists of around 1,190 coral islands grouped into 26 atolls. These islands are spread over approximately 90,000 square kilometers, making the Maldives one of the most geographically dispersed countries in the world. The nation experiences a tropical climate, with warm temperatures throughout the year and two distinct monsoon seasons.Tourism is the backbone of the Maldivian economy. The country's beautiful resorts, underwater villas, and thrilling water sports attract millions of visitors annually. Activities such as snorkeling, scuba diving, and dolphin watching are popular among tourists. Fishing is another major industry, contributing significantly to the economy.The Maldives is a paradise on Earth, offering breathtaking natural beauty and a unique island lifestyle. Despite facing environmental challenges, it remains a top tourist destination and a symbol of tropical luxury. Whether for adventure, relaxation, or cultural experiences, the Maldives continues to captivate visitors from around the world.</p> 
+<div class="famiage">
+<div class="famiage4">
+<img src="https://thesaneadventurer.com/wp-content/uploads/2022/02/beach-gf626d7442_1280-1024x685.jpg" width="300px" height="300px" class="img">
+</div>
+<div class="famiage5">
+<img src="https://www.vakantiediscounter.nl/tools/content/images/accommodations/4d922d74-d482-4a10-95af-a2f54fa81814/670/0.jpg"  width="300px" height="300px" class="img">
+</div>
+<div class="famiage6">
+<img src="https://www.belaroundtheworld.com/wp-content/uploads/2017/03/COMO-Cocoa-Island-pool-1024x640.jpg" width="300px" height="300px" class="img">
+</div>    
+</div>
+<div class="button">
+<button class="buttone"><a href="./Table.html">4.MAAFUSHI ISLAND</a></button>
+<button class="buttone"><a href="./Table.html">5.FIHALHOHI ISLAND</a></button>
+<button class="buttone"><a href="./Table.html">6.COMO COCOA ISLAND</a></button>
+</div>
+<div class="content">
+<div class="content25">
+<p>Maafushi Island is one of the most popular local islands in the Maldives, known for its budget-friendly accommodations, beautiful beaches, and exciting water activities. Located in the Kaafu Atoll, about 27 km from Malé, Maafushi offers an authentic Maldivian experience while still providing plenty of modern tourist facilities.Relax on bikin beach Unlike many local islands in the Maldives, Maafushi has a designated Bikini Beach where tourists can sunbathe and swim freely. The clear turquoise water and soft white sand make it perfect place to relax.Diving is familiar in these island.Enjoy stunning ocean views while experiencing adrenaline rush.</p>
+</div>
+<div class="content26">
+<p>Fihalhohi Island is a romantic gateway for couples and homeymooners.Island has the main features is the stunning overwater bungalows and beaches.It has rich marine life and excellent snorkeling spots.Couples and family trip menbers can feel relaxing and luxurious island experience.The resort has multiple dining options, offering international and Maldivian cuisine, fresh seafood, and romantic beachside dining experiences. The bars serve exotic cocktails and fresh tropical juices.It also offers premium beach villas,overwater bungalows and comfort rooms.Rooms are affordable surrounded by trophical gardens.</p>
+</div>
+<div class="content27">
+<p>Como Cocoa island is one of the most luxurious and exclusive private island resorts in maldives.Island villas offers private sundecks,Direct lagoon access,stunning ocean views,Luxurious amenties.The island is surrounded by rich house reep making it one of the best places for snokeling and diving.Island also has scheduled chart villas and peaceful atmosphere.Cocoa Island is a dream destination for travelers looking for luxury, privacy, and relaxation in a breathtaking tropical paradise! 🌊🏝️</p>
+</div>
+</div>
+<!-- footer  -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <h3 style="margin-left: 50px;">Contact</h3>
+            <p style="color: rgb(137, 205, 92);margin-left: 50px;">Email: wonpath@gmail.in</p>
+            <p style="color: rgb(146, 206, 87);margin-left: 50px;">Phone: +121 865846 265396</p>
+            <p style="color: rgb(142, 213, 95);margin-left: 50px;">Address: 123 street</p>
+        </div>
+        <div class="footer-content">
+            <h3 style="text-align:center; margin-left: 300px;">Quick Links</h3>
+             <ul class="list">
+                <li ><a href="" style="color: rgb(143, 199, 91);">Home</a></li>
+                <li><a href="" style="color: rgb(134, 203, 86);">About</a></li>
+                <li ><a href="" style="color: rgb(138, 200, 85);">Contact</a></li>
+             </ul>
+        </div>
+        <div class="footer-content">
+            <h3 style="text-align: end;margin-left: 350px;">Follow Us</h3>
+            <ul class="social-icons">
+             <li style="margin-right: 30px; "><a href=""><i class="fab fa-facebook" style="transform: scale(1.6);"></i></a></li>
+             <li><a href=""><i class="fab fa-twitter" style="transform: scale(1.6);margin-top: 20px;"></i></a></li>
+             <li style="margin-right: 10px;margin-top: 20px; "><a href=""><i class="fab fa-instagram" style="transform: scale(1.6);"></i></a></li>
+             
+            </ul>
+            </div>
+    </div>
+    <div class="bottom-bar">
+        <p style="margin-top: 5px; text-align: center;font-size: larger;">&copy; 2023 your company . All rights reserved</p>
+    </div>
+    
+</div>
+      </body>
+     </html>

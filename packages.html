@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <style>
+        #logo{
+    height: 70px;
+    background-color: black;
+    color: aliceblue;
+    border:2px solid brown;
+    text-align: center;
+    padding:25px;
+    font-family:'Poppins', sans-serif;
+}
+
+.imu{
+    margin-top:10px;
+}
+#welcome{
+    height:50px;
+    background-color:black;
+    color:aliceblue;
+    border:2px solid brown;
+    text-align: center;
+    font-weight: 500;
+    font-family:'Poppins', sans-serif;
+}
+
+.package{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    
+}
+
+.img{
+    transition-timing-function: ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+}
+.package1 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+}
+.package1:hover img{
+    transform: scale(1.1);
+}
+.package2 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+}
+.package2:hover img{
+    transform: scale(1.1);
+}
+.package3 img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+}
+.package3:hover img{
+    transform: scale(1.1);
+}
+
+.button{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.buttone{
+    width:300px;
+    height:50px;
+    border:2px solid brown;
+    background-color: blue;
+    color:aliceblue;
+    
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+    
+.content1{
+    width:300px;
+    height:300px;
+    background-color: darkmagenta;
+    border: 2px solid brown;
+    margin-top: 10px;
+    text-align: justify;
+    text-indent: 0cap;
+    }
+
+.content2{
+    width:300px;
+    height:310px;
+    background-color: darkolivegreen;
+    border: 2px solid brown;
+    margin-top: 10px;
+    text-align: justify;
+    text-indent: 0cap;
+    }
+.content3{
+    width:300px;
+    height:310px;
+    background-color:darkviolet;
+    border: 2px solid brown;
+    margin-top: 10px;
+    text-align: justify;
+    text-indent: 0cap;
+    
+}
+
+a{
+    text-decoration-line: none;
+    color:aliceblue;
+}
+
+a:hover{
+    color:red;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: rgb(61, 58, 65);
+    height: 300px;
+    padding-top: 30px;
+    color: white;
+}
+.container{
+    display: flex;
+}
+.social-icons i{
+    color:rgb(125, 216, 82);
+    font-size:larger;
+}
+.list{
+    margin-left: 300px;
+}
+.social-icons{
+    margin-left: 445px;
+}
+@media screen and (max-width: 1024px) {
+    .package,  .content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .buttone {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .package,.content {
+        grid-template-columns: 1fr;
+    }
+
+    .buttone {
+        width: 100%;
+        height: 40px;
+    }
+
+    #logo, #welcome {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .content1, .content2, .content3 {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 16px;
+    }
+
+    .buttone {
+        font-size: 14px;
+    }
+
+    .content1, .content2, .content3 {
+        width: 100%;
+    }
+}
+</style>
+<body style="background-color: #f4f4f4;">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <h1 id="logo"><img src="./logos.png" class="imu">PACKAGES OF WONDERPATH</h1>
+<h1 id="welcome">WELCOME TO JOURNEY COLLECTIONS(Explore to Enjoy Journey)🏙️</h1>
+<div class="package">
+<div class="package1">
+<img src="https://tse4.mm.bing.net/th?id=OIP.RAHFvPv85KIQ84-yUhbgPAHaDh&pid=Api&P=0&h=180" class="img" width="300px" height="300px" alt="Online Image">
+</div>
+<div class="package2">
+<img src="https://blog.dookinternational.com/images/post-media/hvGOY1688470246.jpg" class="img" width="300px" height="300px" alt="universe">
+</div>
+<div class="package3">
+<img src="https://thumbs.dreamstime.com/z/family-members-taking-tour-across-their-vacation-complex-family-members-taking-tour-across-their-vacation-complex-family-168899523.jpg" class="img" width="300px" height="300px" alt="family">
+</div>
+</div>
+<div class="button">
+<button class="buttone"><a href="./Intern1.html">INTERNATIONAL TOUR</button></a>
+<button class="buttone"><a href="./Universe1.html">UNIVERSAL TOUR</button></a>
+<button class="buttone"><a href="./Family 1.html">FAMILY TOUR</button></a>
+</div>
+<div class="content">
+<div class="content1">
+<p>Best places with affordable price inside India to visit multiple states like darjeling kerala,Bangalore,Goa,Mysore,Amritsar with feels good nature and varities of tradition involved in particular states with tradition and heritage of the culture.Places with proper tourist guiders every arrangements in a effective and flexible ways.Food and other accomadations with affordable prices and also includes entertainment Programs.International tour provides good experience and explore the journey with the tradition,historical movements,dishes really provides a good feel to all of the booking passengers.</p>    
+</div>
+<div class="content2">
+<p>Best places with affordable price Outside India to visit multiple countries like Europe,Australia,Ireland,Maldives,Japan with feels good nature and varities of tradition involved in particular countries with tradition and heritage of the culture.Places with proper tourist guiders every arrangements in a effective and flexible ways.Food and other accomadations with affordable prices and also includes entertainment Programs.Universal tour provides good experience and explore the journey with knowledge of the other countries culture dishes really provides a good feel to all of the booking passengers.</p>    
+</div>
+<div class="content3">
+<p>Best places with affordable price family based to visit multiple states like darjeling kerala,goa inside India.Europe and Sydney with feels good nature and varities of family based theme parks and Oceans involved in particular spots with various adventures activities.Places with proper tourist guiders every arrangements in a effective and flexible ways.Food and other accomadations with affordable prices and also includes entertainment Programs.International tour provides good experience and explore the journey with the tradition,historical movements,dishes really provides a good feel to all of the booking passengers.</p>
+</div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <h3 style="margin-left: 50px;">Contact</h3>
+            <p style="color: rgb(137, 205, 92);margin-left: 50px;">Email: wonpath@gmail.in</p>
+            <p style="color: rgb(146, 206, 87);margin-left: 50px;">Phone: +121 865846 265396</p>
+            <p style="color: rgb(142, 213, 95);margin-left: 50px;">Address: 123 street</p>
+        </div>
+        <div class="footer-content">
+            <h3 style="text-align:center; margin-left: 300px;">Quick Links</h3>
+             <ul class="list">
+                <li ><a href="" style="color: rgb(143, 199, 91);">Home</a></li>
+                <li><a href="" style="color: rgb(134, 203, 86);">About</a></li>
+                <li ><a href="" style="color: rgb(138, 200, 85);">Contact</a></li>
+             </ul>
+        </div>
+        <div class="footer-content">
+            <h3 style="text-align: end;margin-left: 350px;">Follow Us</h3>
+            <ul class="social-icons">
+             <li style="margin-right: 30px; "><a href=""><i class="fab fa-facebook" style="transform: scale(1.6);"></i></a></li>
+             <li><a href=""><i class="fab fa-twitter" style="transform: scale(1.6);margin-top: 20px;"></i></a></li>
+             <li style="margin-right: 10px;margin-top: 20px; "><a href=""><i class="fab fa-instagram" style="transform: scale(1.6);"></i></a></li>
+             </ul>
+            </div>
+    </div>
+    <div class="bottom-bar">
+        <p style="margin-top: 5px; text-align: center;font-size: larger;">&copy; 2023 your company . All rights reserved</p>
+    </div>
+    
+</div>
+</body>
+</html>

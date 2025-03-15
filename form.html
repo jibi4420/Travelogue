@@ -1,0 +1,235 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACKAGEForm</title>
+<style>
+body {
+    background-image: url(https://wallup.net/wp-content/uploads/2018/09/26/469457-abstract-art-colorful-colors-design-illustration-light-theme.jpg);
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Form Styling */
+form {
+    background: white;
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+form label {
+    width: 100%;
+    font-weight: bold;
+    text-align: left;
+}
+
+form input,
+form select {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: left;
+    width: 90%;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Button Styling */
+.edit-btn, .delete-btn {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+</style>
+ 
+    </script>
+    
+    <!-- form -->
+
+        <script>
+            function addPackage(event) {
+                event.preventDefault(); // Prevent page reload
+                
+                // Get form values
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const phone = document.getElementById("phone").value;
+                const category = document.getElementById("category").value;
+                const combo = document.getElementById("combo").value;
+                
+                // Get selected places
+                const places = [];
+                document.querySelectorAll('input[name="places"]:checked').forEach((place) => {
+                    places.push(place.value);
+                });
+    
+                if (places.length === 0) {
+                    alert("Please select at least one place!");
+                    return;
+                }
+    
+                // Select table body
+                const tableBody = document.querySelector("tbody");
+    
+                // Create a new row
+                const newRow = document.createElement("tr");
+                newRow.innerHTML = `
+                    <td>${name}</td>
+                    <td>${email}</td>
+                    <td>${phone}</td>
+                    <td>${category}</td>
+                    <td>${places.join(", ")}</td>
+                    <td>${combo}</td>
+                    <td><button class="edit-btn">Edit</button></td>
+                    <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+                `;
+    
+                // Append the new row to the table
+                tableBody.appendChild(newRow);
+    
+                // Reset the form
+                document.getElementById("packageForm").reset();
+            }
+    
+            function deleteRow(button) {
+                button.closest("tr").remove();
+            }
+        </script>
+    </head>
+    <!-- <body style="background-color:#e3f2fd;"> -->
+        <body background="./tabbg.webp">
+        <h1>PACKAGE CHART🗓️</h1>
+        <a href="./Table.html">Back to Information Chart</a>
+    
+        <form id="packageForm" onsubmit="addPackage(event)">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+    
+            <label>Email:</label>
+            <input type="email" id="email" required>
+    
+            <label>Phone Number:</label>
+            <input type="tel" id="phone" required pattern="[0-9]{10}" placeholder="Enter 10-digit number">
+    
+            <label>Category:</label>
+            <select id="category">
+                <option value="International Tour">International Tour</option>
+                <option value="Universe Tour">Universe Tour</option>
+                <option value="Family Tour">Family Tour</option>
+            </select>
+    
+            <label>Places:</label>
+            <div class="checkbox-group">
+                
+                <input type="checkbox" name="places" value="Darjeeling"> 1.Darjeeling
+                <input type="checkbox" name="places" value="Kerala">2.Kerala
+                <input type="checkbox" name="places" value="Bangalore">3.Bangalore
+                <input type="checkbox" name="places" value="Amritsar">4.Amritsar,Goa,Mysore.
+                <input type="checkbox" name="places" value="Maldives">5.Maldives
+                <input type="checkbox" name="places" value="Japan">6.Japan
+                <input type="checkbox" name="places" value="Europe">7.Europe
+            </div>
+    
+            <label>Combo:</label>
+            <select id="combo">
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+            </select>
+    
+            <button type="submit">Add Package</button>
+        </form>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Category</th>
+                    <th>Places</th>
+                    <th>Combo</th>
+                    <th>Action1</th>
+                    <th>Action2</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </body>
+    </html>
+            
+            
+
+
+            
