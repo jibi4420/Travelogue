@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Booking List</title>
+  <link rel="stylesheet" href="book list.css">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #2b2828;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  .booking-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  table td {
+    background-color: #f9f9f9;
+  }
+  /* button.view-btn {
+    padding: 5px 10px;
+    background-color:#4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button.view-btn:hover {
+    background-color: #2cca32;
+  }
+   */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+</style>
+<body background="./pexels-njeromin-11542516.jpg">
+  <header>
+    <h1>Wonder Path</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Bookng List</a></li>
+        <li><a href="#">Booked Tours</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="booking-list">
+      <br>
+      <br>
+      <br>
+      <br>
+      <table>
+        <thead>
+          <tr>
+            <th>Booking ID</th>
+            <th>Customer Name</th>
+            <th>Tour Place</th>
+            <th>Booking Date</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#1001</td>
+            <td>Leo Das</td>
+            <td>Paris City Tour</td>
+            <td>2025-02-10</td>
+            <td>Confirmed</td>
+            <td><a href="./view.html" style="background-color:#4CAF50; border-radius: 3px; color: white;text-decoration: none;">View</a></td>
+          </tr>
+          <tr>
+            <td>#1002</td>
+            <td>Kamesh</td>
+            <td>goa Tour</td>
+            <td>2025-02-11</td>
+            <td>Confirmed</td>
+            <td><a href="./view.html" style="background-color:#4CAF50; border-radius: 3px; color: white;text-decoration: none;">View</a></td>
+          </tr>
+          <tr>
+            <td>#1003</td>
+            <td>Ravi</td>
+            <td>England Tour</td>
+            <td>2025-02-20</td>
+            <td>Confirmed</td>
+            <td><a href="./view.html" style="background-color:#4CAF50; border-radius: 3px; color: white;text-decoration: none;">View</a></td>
+          </tr>
+          <tr>
+            <td>#1004</td>
+            <td>Guru</td>
+            <td>Paris Tour</td>
+            <td>2025-02-19</td>
+            <td>Confirmed</td>
+            <td><a href="./view.html" style="background-color:#4CAF50; border-radius: 3px; color: white;text-decoration: none;">View</a></td>
+          </tr>
+          
+          <tr>
+            <td>#1005</td>
+            <td>Jane Smith</td>
+            <td>Rome Heritage Tour</td>
+            <td>2025-02-15</td>
+            <td>Pending</td>
+            <td><a href="./view.html" style="background-color:#4CAF50; border-radius: 3px; color: white;text-decoration: none;">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <a href="./book.html" style="text-align: center;">Back</a>
+  <footer>
+    
+    <p>&copy; 2025 Tour Management System. All rights reserved.</p>
+  </footer>
+</body>
+</html>

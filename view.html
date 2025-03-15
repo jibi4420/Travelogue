@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour view page</title>
+</head>
+<style>
+    /* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+/* Booked Tour Section */
+.booked-tour {
+    padding: 40px 20px;
+    text-align: center;
+    /* background-color: white; */
+}
+
+.booked-tour h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/* Tour Details Styling */
+.tour-details {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    /* background-color: #6aee9c; */
+    background-color: rgb(230, 207, 178);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.tour-details h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.tour-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.tour-details .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status.confirmed {
+    background-color: #4caf50;
+    color: white;
+}
+
+.status.pending {
+    background-color: #ff9800;
+    color: white;
+}
+
+.status.cancelled {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Buttons Styling */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 40px;
+}
+
+</style>
+<body background="./pexels-njeromin-15036818.jpg">
+    <header>
+        <h1>Wonder Path</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Bookng List</a></li>
+            <li><a href="#">Booked Tours</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+    <section class="booked-tour">
+        <div class="container">
+            <br>
+            <!-- <h2>Booked Tour Details</h2> -->
+            <div class="tour-details">
+                <h3>Tour Information</h3>
+                <p><strong>Booking ID:</strong> #102</p>
+                <p><strong>Customer Name:</strong> Jane Smith</p>
+                <p><strong>Destination:</strong> New York</p>
+                <p><strong>Booking Date:</strong> 2025-02-18</p>
+                <p><strong>Status:</strong> <span class="status confirmed">Confirmed</span></p>
+                
+                <h3>Tour Details</h3>
+                <p><strong>Tour Package:</strong> 7 Days New York City Experience</p>
+                <p><strong>Departure Date:</strong> 2025-03-01</p>
+                <p><strong>Return Date:</strong> 2025-03-07</p>
+                <p><strong>Number of Guests:</strong> 2</p>
+                
+                <div class="buttons">
+                    <a href="#" style="text-align: center; border-radius: 5px; background-color: #ee1010; color: white;font-size:large;text-decoration: none;">Cancel Booking</a>
+                    <a href="./payment.html" style="text-align: center; border-radius: 5px; background-color: #4CAF50; color: white;font-size:large;text-decoration: none;">Go To Payment</a>
+                    <a href="./book list.html" style="text-align: center;">Back</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tour Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

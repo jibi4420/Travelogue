@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Boo king Page</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container Styles */
+.booking-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Title Styles */
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="date"] {
+  font-family: Arial, sans-serif;
+}
+
+/* Submit Button Styles */
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.submit-btn:active {
+  background-color: #388e3c;
+}    
+</style>
+<body background="./pexels-andresgarcia-5828628 (3).jpg">
+    <div class="booking-container">
+        
+        <h1>Book Your Tour</h1>
+        <form class="booking-form" action="/submit-booking" method="POST">
+            <div class="form-group">
+                <label for="tour">Select Package</label>
+                <select id="tour" name="tour" required>
+                    <option value="" disabled selected>Select a package</option>
+                    <option value="city-tour">Family Tour</option>
+                    <option value="mountain-tour">International Tour</option>
+                    <option value="beach-tour">Universal Tour</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tour">Select Tour</label>
+                <select id="tour" name="tour" required>
+                    <option value="" disabled selected>Select a tour</option>
+                    <option value="city-tour">kodaikanal</option>
+                    <option value="mountain-tour">goa</option>
+                    <option value="beach-tour">brezil</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Select Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+                 <a href="./book list.html" style="text-align: center;background-color: #4CAF50; color: white;font-size: x-large;text-decoration: none;">Book Now</a>
+        </form>
+    </div>
+</body>
+</html>
